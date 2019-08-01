@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<form>
+  <label for="">Nome:</label>
+  <input type="text" name="msg" id="msg"  [(ngModel)]='msg' >
+  <button (click)='exibirMsg()'>Clique</button>
+</form>
+
+<p> {{msg}}</p>
+<p> {{boasvindas}}</p>
+
+<router-outlet></router-outlet>
