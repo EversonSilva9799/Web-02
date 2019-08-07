@@ -10,7 +10,6 @@ export class SignupComponent implements OnInit {
 
   // constructor() { }
 
-  
   meuForm = this.fb.group(
     {
       firstName: ['', Validators.required],
@@ -25,9 +24,9 @@ export class SignupComponent implements OnInit {
   }
   ngOnInit() {
   }
-  onSubmit(){
-    console.log(this.meuForm.value);
+
+  onSubmit() {
+    console.log(this.meuForm);
   }
-  
 
 }
