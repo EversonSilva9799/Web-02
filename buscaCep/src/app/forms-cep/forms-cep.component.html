@@ -1,0 +1,23 @@
+<form [formGroup]="formulario">
+    <p>
+        <label>CEP</label><br>
+        <input type="text" name="cep" id="cep" formControlName="cep">
+    </p>
+    <p>
+        <label for="">Logradouro</label><br>
+        <input type="text" name="logradouro" id="logradouro" formControlName="logradouro">
+    </p>
+    <p>
+        <label for="">Bairro</label><br>
+        <input type="text" name="bairro" id="bairro" formControlName="bairro">
+    </p>
+    <p>
+        <label for="">Cidade</label><br>
+        <input type="text" name="cidade" id="cidade" formControlName="cidade">
+    </p>
+    <p>
+        <label for="">UF</label><br>
+        <input type="text" name="uf" id="uf" formControlName="uf">
+    </p>
+    <button type="submit" [disabled]="formulario.invalid">Buscar</button>
+</form>
