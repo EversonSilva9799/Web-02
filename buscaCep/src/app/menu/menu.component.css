@@ -28,3 +28,9 @@
 .menu li a:hover {
 	color: #606978;
 }
+
+@media only screen and (max-width: 400px) {
+	.menu li a {
+		font-size: 1em;
+	}
+}
